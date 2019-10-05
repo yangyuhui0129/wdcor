@@ -1,0 +1,12 @@
+Package: wdcor
+Type: Package
+Title: wdcor statistics: Multivariate Inference via Weighted Distance Correlation
+Version: 0.1.0
+Author: Canhong Wen, Yuhui Yang ,Quan Xiao, Meiyan Huang and Wenliang Pan
+Description: This package can be used in measuring and testing multivariate independence between two variables in arbitrary dimension, especially it is suitable for ultra-high dimensional variables.
+Maintainer: Canhong Wen <wench@ustc.edu.cn>
+Imports: Rcpp (>= 0.12.6), stats, boot
+LinkingTo: Rcpp
+Suggests: MASS,energy
+License: GPL (>= 2)
+

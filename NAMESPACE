@@ -1,0 +1,12 @@
+useDynLib(wdcor)
+
+importFrom(Rcpp, evalCpp)
+importFrom("stats", "as.dist", "dist", "dnorm", "hclust", "model.matrix",
+           "pnorm", "pt", "rnorm", "rpois", "var")
+importFrom(boot, boot)
+
+export(
+  wdcor,
+  wdcor.test
+)
+
