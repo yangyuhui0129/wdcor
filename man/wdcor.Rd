@@ -1,6 +1,5 @@
 \name{weighted distance correlation}
 \alias{wdcor}
-\alias{dcor}
 \title{ Weighted Distance Correlation Statistic}
 \description{
  Computes weighted distance correlation statistic,
@@ -22,7 +21,7 @@ wdcor(x, y, G.list= NULL)
   \code{x}, \code{y} can optionally be \code{\link{dist}} objects;
  otherwise these arguments are treated as data.
 
-%%---new
+
 Weighted distance correlation is a new measure of association analysis
 between two random variables introduced by Wen, Yang, Xiao, Huang and Pan (2019).
 The weighted distance correlation was motivated by distance correlation, and
@@ -42,12 +41,12 @@ The empirical weighted distance correlation is defined as
 }
 
 Where the empirical optimal weight can be obtained as follows.
-Consider a function of \eqn{\beta_j = dCor(\mathbf{X},\mathbf{Y_j})}{\beta_j=dCor(X,Y_j)} as the weight function, and define
+Consider a function of \eqn{\beta_j = dCor(\mathbf{X},\mathbf{Y_j})}{\beta_j=dCor(X,Y_j)} as the weight function, \eqn{\beta = (\beta_1,\beta_2,\ldots,\beta_q)}{\beta=(\beta_1,\beta_2,\ldots,\beta_q)}, and define
 \eqn{\omega_j = \frac{{\beta_j}^{\gamma}}{\parallel \beta^{\gamma} \parallel}}{\omega_j = (\beta_j ^\gamma) / (||\beta^\gamma||)}. When \eqn{\gamma} traverses the positive integer \eqn{\Gamma}, the eimprical optimal empirical solution can be obtained:
 \deqn{
 \hat{\omega}_{opt} = \arg\mathop{\max}_{\gamma \in \Gamma} \widehat{ wdCor}(\mathbf{X},\mathbf{Y};\omega)=\arg\mathop{\max}_{\gamma \in \Gamma} \widehat{ dCor}(\mathbf{X},(\omega_1 \mathbf{Y_1},\ldots,\omega_1 \mathbf{Y_q}))
 }{
-\hat \omega_opt=argmax_{\gamma \in \Gamma} \widehat wdCor(X,Y;\omega)=argmax_{\gamma \in \Gamma}\widehat dCor(X,(\omega_1Y_1,\ldots,\omega_1Y_1))
+\hat \omega_opt=argmax_{\gamma \in \Gamma} \widehat wdCor(X,Y;\omega)=argmax_{\gamma \in \Gamma}\widehat dCor(X,(\omega_1Y_1,\ldots,\omega_qY_q))
 }
 
 See \code{\link{wdcor.test}} for a test of multivariate independence

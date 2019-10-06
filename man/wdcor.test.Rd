@@ -1,5 +1,4 @@
 \name{wdcor.test}
-\alias{dcor.test}
 \alias{wdcor.test}
 \title{ Weighted Distance Correlation test}
 \description{
@@ -17,20 +16,19 @@
 \details{
   \code{wdcor.test} are nonparametric tests of multivariate independence.
   The test decision is obtained via permutation bootstrap, with \code{R} replicates.
-  %%. add more
+
   The sample sizes (number of rows) of the two samples must
   agree, and samples must not contain missing values. Arguments
   \code{x}, \code{y} can optionally be \code{\link{dist}} objects;
   otherwise these arguments are treated as data.
-  %%---new
 
   Weighted distance correlation is a new measure of association analysis
-  between two random vectors introduced by Wen, Yang, Xiao, Huang and Pan (2020).
+  between two random vectors introduced by Wen, Yang, Xiao, Huang and Pan (2019).
   The weighted distance correlation was motivated by distance correlation, and
   generalized to solve the problem of power declining rapidly of distance correlation in
   ultra-high dimensional data.
 
-  See more details from the manual page for \code{wdcor}.
+  See more details from the manual page for \code{link{wdcor}}.
 }
 \value{
   \code{wdcor.test} returns a list with class \code{wdcor test} containing
