@@ -9,4 +9,6 @@ Imports: Rcpp (>= 0.12.6), stats, boot
 LinkingTo: Rcpp
 Suggests: MASS,energy
 License: GPL (>= 2)
+URL: http://github.com/yangyuhui0129/wdcor
+BugReports:http://github.com/yangyuhui0129/wdcor/issues
 
